@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/boostrap/bootstrap.min.css}">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+	href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap"
+	rel="stylesheet">
+<title th:text="${TituloPagina}"></title>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light w-100"
+		style="background: #FCDAE0">
+		<a class="navbar-brand" href="#"> <img
+			src="/assets/Rectangle 2.png" width="80" height="80" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item active"><a class="nav-link" href="#">INICIO<span
+						class="sr-only"></span>
+				</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">SOBRE
+						NOSOTROS</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">PEDIDOS</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">CONTACTO</a>
+				</li>
+
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">LOGIN</button>
+			</form>
+		</div>
+	</nav>
+
+
+	<img src="/assets/Vector 1.png" class="img-fluid w-100"
+		style="height: 80vh" alt="">
+	<img class="img-fluid img-pastel" src="/assets/pastel.png" alt="">
+
+	<div class="container-fluid">
+		<h1 class="letra-1">100% NUTRITIVOS 0% AZUCARES 1000% DELICIOSOS</h1>
+		<h1 class="letra-2">PASTELES SALUDABLES</h1>
+		<h1 class="letra-3">Si te encanta la comida sana pero no puedes
+			decir que no a los pasteles, entonces nuestros pasteles son para ti</h1>
+
+		<button class="boton-menu">
+			<h1>VER MENÚ</h1>
+		</button>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<script th:src="@{/boostrap/bootstrap.jquery-3.2.1.slim.min.js}"></script>
+	<script th:src="@{/boostrap/popper.min.js}"></script>
+	<script th:src="@{/boostrap/bootstrap.min.js}"></script>
+</body>
+</html>
